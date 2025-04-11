@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background: #FAF9F6 ;
+    font-family: 'Jetbrains Mono';
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .cell {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform-origin: center;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  /* Hover scale */
+  .cell:hover {
+    transform: scale(1.5);
+    z-index: 2;
+  }
+  
+  /* Pattern overlay */
+  .cell::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: 20px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  
+  .cell:hover::before {
+    opacity: 5;
+  }
+  
+  /* Color and hover pattern variations */
+  .cell.red {
+    background-color: #e57373;
+  }
+  .cell.red:hover {
+    background-color: rgb(56, 248, 191);
+  }
+  .cell.red::before {
+    background-image: repeating-linear-gradient(45deg, #fff3 0 2px, transparent 2px 10px);
+  }
+  
+  .cell.pink {
+    background-color: #f06292;
+  }
+  .cell.pink:hover {
+    background-color: #3f79ec;
+  }
+  .cell.pink::before {
+    background-image: radial-gradient(#fff2 1px, transparent 1px);
+    background-size: 10px 10px;
+  }
+  
+  .cell.purple {
+    background-color: #ba68c8;
+  }
+  .cell.purple:hover {
+    background-color: #edff4f;
+  }
+  .cell.purple::before {
+    background-image: repeating-linear-gradient(0deg, #fff2 0 2px, transparent 2px 10px);
+  }
+  
+  .cell.blue {
+    background-color: #64b5f6;
+  }
+  .cell.blue:hover {
+    background-color: #fba440;
+  }
+  .cell.blue::before {
+    background-image: repeating-linear-gradient(135deg, #fff2 0 1px, transparent 1px 10px);
+  }
+  
+  .cell.teal {
+    background-color: #4db6ac;
+  }
+  .cell.teal:hover {
+    background-color: #c43131;
+  }
+  .cell.teal::before {
+    background-image: radial-gradient(#fff2 1px, transparent 1px);
+    background-size: 15px 15px;
+  }
+  
+  .cell.green {
+    background-color: #81c784;
+  }
+  .cell.green:hover {
+    background-color: #fe55a4;
+  }
+  .cell.green::before {
+    background-image: repeating-linear-gradient(90deg, #fff2 0 2px, transparent 2px 10px);
+  }
+  
+  .cell.yellow {
+    background-color: #ffd54f;
+  }
+  .cell.yellow:hover {
+    background-color: #ad28ff;
+  }
+  .cell.yellow::before {
+    background-image: repeating-linear-gradient(-45deg, #fff2 0 2px, transparent 2px 8px);
+  }
+  
+  .cell.orange {
+    background-color: #ffb74d;
+  }
+  .cell.orange:hover {
+    background-color: #4352dc;
+  }
+  .cell.orange::before {
+    background-image: radial-gradient(#fff3 1px, transparent 1px);
+    background-size: 12px 12px;
+  }
+  
+  .cell.brown {
+    background-color: #a1887f;
+  }
+  .cell.brown:hover {
+    background-color: #fe4ec4;
+  }
+  .cell.brown::before {
+    background-image: repeating-linear-gradient(180deg, #fff2 0 2px, transparent 2px 10px);
+  }
+  
