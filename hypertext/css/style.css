@@ -1,0 +1,662 @@
+
+.htmlpage1 {
+    margin: 0;
+    font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman', serif;
+    background: linear-gradient(to bottom right, #a2ffdfb6, #9da7ffa6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .htmlpage1 .center {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .htmlpage1 h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .htmlpage1 h3 {
+    margin-top: 20px;
+  }
+  
+  .htmlpage1 a button,
+  .htmlpage1 a.choice-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #fd82c6dc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .htmlpage1 a.choice-link {
+    background-color: #cf88ffea;
+  }
+  
+  .htmlpage1 .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+  
+  .htmlpage1 a button:hover,
+  .htmlpage1 a.choice-link:hover {
+    transform: scale(1.1);
+    background-color: #ff78a5e6;
+  }
+  
+  .htmlpage1 .background-mermaid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://thumbs.dreamstime.com/b/mermaid-20422835.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.07;
+    animation: float 10s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  @keyframes float {
+    0%, 75% {
+      transform: scale(1) translateY(0);
+    }
+    50% {
+      transform: scale(1.02) translateY(-10px);
+    }
+  }
+  
+
+
+.htmlpage2 {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to bottom right, #6ee7ffa5, #ff82c2d8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .htmlpage2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://t4.ftcdn.net/jpg/06/06/87/63/360_F_606876358_NU2hCq3RP7xDpXG6PWnAMGGAun0fB5tW.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .htmlpage2 .shell-image {
+    max-width: 300px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .htmlpage2 a {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .htmlpage2 p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #d63384;
+  }
+  
+  .htmlpage2 a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff69c3;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .htmlpage2 a:hover {
+    transform: scale(1.1);
+    background-color: #85ffb8;
+  }
+  
+
+.htmlpage3 {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://i.etsystatic.com/15759895/r/il/9cadc6/1566665318/il_fullxfull.1566665318_76h9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    border: 10px solid red;
+    box-sizing: border-box;
+  }
+  
+  .htmlpage3 p {
+    font-size: 2em;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .htmlpage3 a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;  
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .htmlpage3 a:hover {
+    background-color: red;
+    transform: scale(1.05);
+  }
+  
+  .htmlpage3 .mermaid-img {
+    max-width: 300px;
+    width: 80%;
+    margin: 20px 0;
+    border: 4px solid red;
+    border-radius: 10px;
+  }
+  
+  .htmlpage4 {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(to bottom right, #ff6cce67, #c0fcffd1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .htmlpage4 .background-shell {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://m.media-amazon.com/images/I/81J1+tOtHjL._AC_UF350,350_QL80_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .htmlpage4 p,
+  .htmlpage4 a {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .htmlpage4 p {
+    font-size: 2em;
+    margin: 10px;
+    color: #880e4f;
+  }
+  
+  .htmlpage4 a {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 25px;
+    background-color: #ff69b47c;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .htmlpage4 a:hover {
+    transform: scale(1.2);
+    background-color: #85f7ff;
+  }
+  
+
+.htmlpage5 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom right, #21064a, #2e0570df);
+    color: #e0d6f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .htmlpage5 p {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .htmlpage5 .curse-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    background-color: #3a0066;
+    color: #e0d6f5;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+    transition: background-color 0.3s, transform 0.3s;
+    min-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .htmlpage5 .curse-button:hover {
+    background-color: #d6d451;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .htmlpage5 .ursula-img {
+    width: 500px;
+    max-width: 90%;
+    border: 4px solid ;
+    border-radius: 20px;
+    margin: 25px 0;
+    box-shadow: 0 0 20px #66006688;
+  }
+  
+  /* ========== HTMLPAGE 6 (Survivor) ========== */
+.htmlpage6 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(45deg, rgb(255, 152, 229), rgb(96, 228, 255), rgb(220, 143, 255));
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .htmlpage6 .survivor-gif {
+    width: 450px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .htmlpage6 p {
+    font-size: 2em;
+    margin: 20px;
+    background-color: rgba(158, 94, 255, 0.791);
+    padding: 20px 30px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .htmlpage6 a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1;
+  }
+  
+  .htmlpage6 a:hover {
+    background-color: rgb(255, 142, 142);
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+.htmlpage7 {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #adc3e67a;
+    color: #003366;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .htmlpage7 .background-shark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://i.natgeofe.com/n/2a2ce30d-7f36-409a-973c-42de830ba62f/sharkattackpew_16x9.jpg?w=1200');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .htmlpage7 p,
+  .htmlpage7 .shark-button {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .htmlpage7 p {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .htmlpage7 .shark-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 20px;
+    min-width: 280px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .htmlpage7 .shark-button:hover {
+    background-color: red;
+    transform: scale(1.1);
+  }
+  .htmlpage7 .shark-warning {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: red;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ========== HTMLPAGE 8 ========== */
+.htmlpage8 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #2f2f2f;
+    background-image: url('https://images.unsplash.com/photo-1534358594138-6955f589fa24?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGNsb3VkfGVufDB8fDB8fHww');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .htmlpage8 p {
+    font-size: 2em;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .htmlpage8 .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .htmlpage8 a {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #555;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: 2px solid #e0e0e0;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .htmlpage8 a:hover {
+    background-color: #bb3737;
+    transform: scale(1.1);
+  }
+  
+
+.htmlpage9 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom right, #ffa9f1, #c392ff);
+    color: #4b0082;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .htmlpage9 .side-image img {
+    width: 500px;
+    max-width: 90vw;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(75, 0, 130, 0.4);
+  }
+  
+  .htmlpage9 .content {
+    max-width: 500px;
+  }
+  
+  .htmlpage9 p {
+    font-size: 2em;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  
+  .htmlpage9 a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #b266ff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .htmlpage9 a:hover {
+    background-color: #fffc33;
+    color: black;
+    transform: scale(1.1);
+  }
+  
+  /* ========== HTMLPAGE 10 ========== */
+.htmlpage10 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background:linear-gradient(to bottom right,#cc0000, #66ebff); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .htmlpage10 p {
+    font-size: 2em;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 30px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .htmlpage10 a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #cc0000;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1;
+  }
+  
+  .htmlpage10 a:hover {
+    background-color: #66ebff;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .htmlpage10 .shark-gif {
+    width: 600px;
+    max-width: 90%;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
+  
+  /* ========== HTMLPAGE 12 (Mermaid Fate) ========== */
+.htmlpage12 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: black;
+    background-image: url('https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Mermaid_Illustration_30_1024x1024.jpg?v=1706144870');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border: 15px solid white;
+  }
+  
+  .htmlpage12 p {
+    font-size: 2em;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .htmlpage12 a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #00c294;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1;
+  }
+  
+  .htmlpage12 a:hover {
+    background-color: #ff9898;
+    color: white;
+    transform: scale(1.1);
+  }
+  
